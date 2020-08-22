@@ -19,8 +19,10 @@ class CashRegister
   
   def apply_discount
     if @discount <= 0
-      
+      "There is no discount to apply"
+    else
       new_price = 100 - (100 * @discount / 100)
+    end
   end 
   
   
